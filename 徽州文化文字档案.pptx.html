@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>徽州文化"文字档案"构建</title>
+<script src="https://statics.moonshot.cn/kimi-ppt/html-gen/static/tailwindcss@4_0805.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;family=Oranienbaum&amp;family=Quattrocento:wght@400;700&amp;family=Quattrocento+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/mathjax@3.2.2/es5/tex-svg.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] h-[720px] mx-auto p-[40px] box-border overflow-hidden mb-[40px];
+            }
+        }
+    </style>
+<style>
+        body {
+            color: #3C3836;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .font-serif-cn {
+            font-family: 'Noto Serif SC', serif;
+        }
+        .font-display {
+            font-family: 'Oranienbaum', 'Quattrocento', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 py-8">
+<!-- 第1页：封面 -->
+<div class="ppt-slide !bg-[#F8F5F0]" type="cover">
+<img alt="徽州古村落" class="absolute inset-0 w-full h-full object-cover opacity-40" src="徽州古村落水墨画.png"/>
+<div class="absolute inset-0 bg-gradient-to-br from-[#8A9B8C]/30 via-transparent to-[#B3A593]/20"></div>
+<div class="relative h-full flex items-center z-10">
+<div class="w-2/3">
+<div class="inline-block px-6 py-3 bg-[#C87D59] text-[#F8F5F0] text-lg font-bold rounded-full mb-8">
+                    延乔路小学寒假主题学习实践
+                </div>
+<h1 class="font-serif-cn text-8xl font-bold text-[#3C3836] mb-6 leading-tight">
+                    徽州文化<br/>"文字档案"构建
+                </h1>
+<div class="w-32 h-2 bg-[#C87D59] mb-8"></div>
+<p class="text-4xl text-[#8A9B8C] font-serif-cn font-bold">
+                    我为家乡做代言
+                </p>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="table_of_contents">
+<div class="h-full flex flex-col">
+<div class="mb-8">
+<h2 class="font-serif-cn text-6xl font-bold text-[#3C3836] mb-4">目录</h2>
+<div class="w-24 h-1 bg-[#C87D59]">
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-6">
+<div class="bg-white rounded-2xl p-8 shadow-lg border-l-8 border-[#8A9B8C] hover:shadow-xl transition-shadow flex flex-col justify-center">
+<div class="flex items-center gap-5 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white font-bold text-3xl font-display shrink-0">01</div>
+<h3 class="font-serif-cn text-3xl font-bold text-[#3C3836]">走进徽州</h3>
+</div>
+<p class="text-xl text-[#3C3836]/70 leading-relaxed ml-[84px]">白墙黛瓦间的千年韵味</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg border-l-8 border-[#B3A593] hover:shadow-xl transition-shadow flex flex-col justify-center">
+<div class="flex items-center gap-5 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#B3A593] flex items-center justify-center text-white font-bold text-3xl font-display shrink-0">02</div>
+<h3 class="font-serif-cn text-3xl font-bold text-[#3C3836]">徽州故事</h3>
+</div>
+<p class="text-xl text-[#3C3836]/70 leading-relaxed ml-[84px]">历史长河中的传奇人物</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg border-l-8 border-[#C87D59] hover:shadow-xl transition-shadow flex flex-col justify-center">
+<div class="flex items-center gap-5 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#C87D59] flex items-center justify-center text-white font-bold text-3xl font-display shrink-0">03</div>
+<h3 class="font-serif-cn text-3xl font-bold text-[#3C3836]">徽匠精神</h3>
+</div>
+<p class="text-xl text-[#3C3836]/70 leading-relaxed ml-[84px]">匠心独运的非遗传承</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg border-l-8 border-[#8A9B8C] hover:shadow-xl transition-shadow flex flex-col justify-center">
+<div class="flex items-center gap-5 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white font-bold text-3xl font-display shrink-0">04</div>
+<h3 class="font-serif-cn text-3xl font-bold text-[#3C3836]">文化感悟</h3>
+</div>
+<p class="text-xl text-[#3C3836]/70 leading-relaxed ml-[84px]">徽韵匠心的时代价值</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg border-l-8 border-[#B3A593] hover:shadow-xl transition-shadow col-span-2 flex flex-col justify-center">
+<div class="flex items-center gap-5 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#B3A593] flex items-center justify-center text-white font-bold text-3xl font-display shrink-0">05</div>
+<h3 class="font-serif-cn text-3xl font-bold text-[#3C3836]">我为家乡做代言</h3>
+</div>
+<p class="text-xl text-[#3C3836]/70 leading-relaxed ml-[84px]">解说词框架</p>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#8A9B8C]" type="chapter">
+<img alt="徽派建筑" class="absolute inset-0 w-full h-full object-cover opacity-30" src="https://kimi-web-img.moonshot.cn/img/txhz.hsu.edu.cn/078f3bb4559bcd443adc34d3ed69354fa1589e0b.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#8A9B8C]/90 to-[#8A9B8C]/60"></div>
+<div class="relative h-full flex items-center z-10">
+<div class="max-w-3xl">
+<div class="inline-block px-6 py-3 bg-[#C87D59] text-[#F8F5F0] text-xl font-bold rounded-full mb-8">
+                    Chapter 01
+                </div>
+<h2 class="font-serif-cn text-7xl font-bold text-[#F8F5F0] mb-6 leading-tight">
+                    走进徽州
+                </h2>
+<div class="w-40 h-1 bg-[#C87D59] mb-8"></div>
+<p class="text-4xl text-[#F8F5F0]/90 font-light">
+                    白墙黛瓦间的千年韵味
+                </p>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-6">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">徽州在哪里？</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-5 gap-6">
+<div class="col-span-3 flex flex-col justify-center space-y-6">
+<div class="bg-white rounded-xl p-6 shadow-md">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-map-marker-alt text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-3">地理位置</h3>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed">古徽州位于安徽省南部，包括今天的黄山市和江西省婺源县。这里山清水秀，素有"<strong class="text-[#8A9B8C]">八分半山一分水，半分农田和庄园</strong>"之称。</p>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-md">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-landmark text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-3">历史沿革</h3>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed">徽州始建于宋徽宗宣和三年（1121年），距今已有<strong class="text-[#B3A593]">900多年历史</strong>。南宋迁都临安后，徽州文风昌盛，被誉为"<strong class="text-[#C87D59]">东南邹鲁</strong>"。</p>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-md">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-award text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-3">文化地位</h3>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed">徽州是<strong class="text-[#C87D59]">徽文化的发祥地</strong>，拥有徽派建筑、徽州三雕、徽菜、徽墨歙砚等众多文化瑰宝。2000年，西递、宏村被列入<strong class="text-[#8A9B8C]">世界文化遗产</strong>名录。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-2">
+<div class="h-full rounded-2xl overflow-hidden shadow-xl">
+<img alt="宏村古村落" class="w-full h-full object-cover" src="https://kimi-web-img.moonshot.cn/img/www.sinowh.org.cn/534cd7a975e500de5b912f2a35e95f51e12f2039.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">徽派建筑：马头墙的秘密</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-6">
+<div class="flex flex-col justify-center space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#8A9B8C]">
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-3 flex items-center gap-3">
+<i class="fas fa-shield-alt text-[#8A9B8C]"></i>
+                            实用功能：防火墙
+                        </h3>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">马头墙又称<strong class="text-[#8A9B8C]">封火墙</strong>，因为古代房屋多用木材建造，且徽州村落建筑密度大，马头墙能在邻居发生火灾时起到<strong class="text-[#C87D59]">隔断火源</strong>的作用，保护整个村落的安全。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#B3A593]">
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-3 flex items-center gap-3">
+<i class="fas fa-home text-[#B3A593]"></i>
+                            造型特点：五岳朝天
+                        </h3>
+<p class="text-base text-[#3C3836]/80 leading-relaxed mb-3">马头墙高低错落，一般为<strong class="text-[#B3A593]">两叠式或三叠式</strong>，大户人家的马头墙可多至<strong class="text-[#C87D59]">五叠</strong>，俗称"五岳朝天"，显示出主人高贵显赫的身份地位。</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-[#8A9B8C]/10 text-[#8A9B8C] rounded-full text-sm font-bold">鹊尾式</span>
+<span class="px-3 py-1 bg-[#B3A593]/10 text-[#B3A593] rounded-full text-sm font-bold">印斗式</span>
+<span class="px-3 py-1 bg-[#C87D59]/10 text-[#C87D59] rounded-full text-sm font-bold">坐吻式</span>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#C87D59]">
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-3 flex items-center gap-3">
+<i class="fas fa-horse text-[#C87D59]"></i>
+                            文化寓意：万马奔腾
+                        </h3>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">从高处俯瞰，错落有致、黑白辉映的马头墙，给人视觉产生一种"<strong class="text-[#C87D59]">万马奔腾</strong>"的动感，隐喻着整个宗族<strong class="text-[#8A9B8C]">生气勃勃、兴旺发达</strong>。马头通常是"金印式"或"朝笏式"，显示主人对"读书作官"理想的追求。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex-1 rounded-2xl overflow-hidden shadow-xl">
+<img alt="马头墙" class="w-full h-full object-cover" src="https://kimi-web-img.moonshot.cn/img/oss.seetao.com/42a1a50997aa7f97ea90b2be665ff092444d93cd.png"/>
+</div>
+<div class="bg-[#8A9B8C]/10 rounded-xl p-5">
+<p class="text-lg text-[#3C3836] leading-relaxed font-serif-cn italic text-center">
+<i class="fas fa-quote-left text-[#8A9B8C] mr-2"></i>
+                            青砖小瓦马头墙，回廊挂落花格窗
+                            <i class="fas fa-quote-right text-[#8A9B8C] ml-2"></i>
+</p>
+<p class="text-base text-[#3C3836]/70 text-center mt-2">——明清江南传统民居建筑的真实写照</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">徽州三雕：无宅不雕花</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 flex flex-col space-y-4">
+<div class="grid grid-cols-3 gap-5">
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-14 h-14 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-tree text-2xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">木雕</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed mb-3">主要用于<strong class="text-[#8A9B8C]">房梁、窗棂、门楣</strong>以及家具装饰。雕刻内容丰富，包括历史故事、神话传说、花鸟鱼虫等。</p>
+<div class="bg-[#8A9B8C]/10 rounded-lg p-3">
+<p class="text-sm text-[#3C3836]/70"><strong>代表作：</strong>黟县承志堂"百子闹元宵"，镂空层次达十余层</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-14 h-14 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-square text-2xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">砖雕</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed mb-3">主要装饰于<strong class="text-[#B3A593]">门楼、门罩、屋檐</strong>等处。采用质地坚细的青灰砖，雕刻层次可达9层，工艺极为精细。</p>
+<div class="bg-[#B3A593]/10 rounded-lg p-3">
+<p class="text-sm text-[#3C3836]/70"><strong>代表作：</strong>歙县博物馆"灶神庙砖雕"，尺余见方却耗费1200个匠工</p>
+</div>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-14 h-14 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-mountain text-2xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">石雕</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed mb-3">主要用于<strong class="text-[#C87D59]">牌坊、祠堂、柱础</strong>等。风格古朴大方，刀法刚劲，图案以动植物、博古纹样为主。</p>
+<div class="bg-[#C87D59]/10 rounded-lg p-3">
+<p class="text-sm text-[#3C3836]/70"><strong>代表作：</strong>歙县棠樾牌坊群、许国石坊雕刻</p>
+</div>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-5 gap-5">
+<div class="col-span-2 rounded-2xl overflow-hidden shadow-xl">
+<img alt="徽州三雕" class="w-full h-full object-cover" src="https://kimi-web-img.moonshot.cn/img/www.ourchinastory.com/1adbc25fbf6da18dd0def2dc06a5c31caf4f6759.jpg"/>
+</div>
+<div class="col-span-3 bg-white rounded-xl p-6 shadow-md flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<div class="px-4 py-2 bg-[#C87D59] text-[#F8F5F0] rounded-full text-lg font-bold">国家级非遗</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">2006年列入第一批国家级非物质文化遗产名录</h3>
+</div>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed mb-4">徽州三雕是古代徽州地区明清建筑的装饰性雕刻，具有浓厚的地方文化色彩。其<strong class="text-[#8A9B8C]">布局之工、结构之巧、装饰之美、营造之精、内涵之深</strong>，令人叹为观止。</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-[#8A9B8C]/10 rounded-lg p-4">
+<p class="text-base text-[#3C3836] font-bold mb-2">雕刻技法</p>
+<p class="text-sm text-[#3C3836]/70">浮雕、透雕、圆雕、线刻等多种技法并用</p>
+</div>
+<div class="bg-[#C87D59]/10 rounded-lg p-4">
+<p class="text-base text-[#3C3836] font-bold mb-2">题材内容</p>
+<p class="text-sm text-[#3C3836]/70">民间传说、戏文故事、花鸟瑞兽、民情风俗</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#B3A593]" type="chapter">
+<img alt="徽州古村落" class="absolute inset-0 w-full h-full object-cover opacity-30" src="https://kimi-web-img.moonshot.cn/img/www.anhuinews.com/3fa977038d64220c2c06c8c6a6cfc81306cdafd6.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#B3A593]/90 to-[#B3A593]/60"></div>
+<div class="relative h-full flex items-center z-10">
+<div class="max-w-3xl">
+<div class="inline-block px-6 py-3 bg-[#C87D59] text-[#F8F5F0] text-xl font-bold rounded-full mb-8">
+                    Chapter 02
+                </div>
+<h2 class="font-serif-cn text-7xl font-bold text-[#F8F5F0] mb-6 leading-tight">
+                    徽州故事
+                </h2>
+<div class="w-40 h-1 bg-[#C87D59] mb-8"></div>
+<p class="text-4xl text-[#F8F5F0]/90 font-light">
+                    历史长河中的传奇人物
+                </p>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">方腊起义：石鼓响鼎的传说</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-6">
+<div class="flex flex-col justify-center space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-user text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">人物简介</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#8A9B8C]">方腊</strong>（1078-1121），原籍<strong class="text-[#C87D59]">歙州</strong>（今安徽歙县），后迁居睦州青溪县。北宋末年农民起义领袖，因不堪<strong class="text-[#B3A593]">"花石纲"</strong>之扰，于宣和二年（1120年）起义。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-scroll text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">石鼓响鼎传说</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">传说徽州古城有一面神奇的石鼓，只有真命天子才能敲响。方腊路过时踢了石鼓一脚，后来他的弟弟敲响了石鼓。虽然这是民间传说，但体现了百姓对方腊的敬仰。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-fist-raised text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">起义口号</h3>
+</div>
+<div class="bg-[#C87D59]/10 rounded-lg p-4 text-center">
+<p class="text-2xl text-[#C87D59] font-bold font-serif-cn mb-2">"是法平等，无有高下"</p>
+<p class="text-base text-[#3C3836]/70">方腊提出平等理念，聚众百万，威震东南</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex-1 bg-white rounded-xl p-6 shadow-md flex flex-col justify-center">
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836] mb-4 flex items-center gap-3">
+<i class="fas fa-mountain text-[#8A9B8C]"></i>
+                            方腊寨遗址
+                        </h3>
+<p class="text-base text-[#3C3836]/80 leading-relaxed mb-4">位于<strong class="text-[#8A9B8C]">齐云山后山独耸峰</strong>，海拔566米，四周悬崖峭壁，地势险要，仅一条45°以上的陡坡可通达，拥有<strong class="text-[#C87D59]">"一夫当关，万夫莫开"</strong>之势。</p>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">山顶现存方腊驻军堡垒残垣及三座起义军将领蜡像。方腊洞隐于崖壁，洞口狭窄隐蔽，可屯兵千人，是方腊议事及藏兵之所。</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-[#8A9B8C]/10 rounded-xl p-4 text-center">
+<p class="text-4xl font-bold text-[#8A9B8C] font-display mb-1">百万</p>
+<p class="text-base text-[#3C3836]/70">义军规模</p>
+</div>
+<div class="bg-[#B3A593]/10 rounded-xl p-4 text-center">
+<p class="text-4xl font-bold text-[#B3A593] font-display mb-1">6州52县</p>
+<p class="text-base text-[#3C3836]/70">攻占地区</p>
+</div>
+<div class="bg-[#C87D59]/10 rounded-xl p-4 text-center">
+<p class="text-4xl font-bold text-[#C87D59] font-display mb-1">永乐</p>
+<p class="text-base text-[#3C3836]/70">年号</p>
+</div>
+<div class="bg-[#8A9B8C]/10 rounded-xl p-4 text-center">
+<p class="text-4xl font-bold text-[#8A9B8C] font-display mb-1">圣公</p>
+<p class="text-base text-[#3C3836]/70">尊号</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">才女李因：积苔为纸，扫柿为书</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-5 gap-6">
+<div class="col-span-2 rounded-2xl overflow-hidden shadow-xl">
+<img alt="才女李因读书图" class="w-full h-full object-cover" src="才女李因读书图.png"/>
+</div>
+<div class="col-span-3 flex flex-col justify-center space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-feather-alt text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">人物简介</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#8A9B8C]">李因</strong>，明末清初徽州才女，出身贫寒却<strong class="text-[#C87D59]">资性警敏，耽于读书</strong>。早年为江浙名妓，后被海宁人葛征奇纳为侍妾，成为诗画双绝的一代才女。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-book text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">刻苦求学</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">李因<strong class="text-[#B3A593]">"积苔为纸，扫柿为书，帷萤为灯"</strong>，在极其艰苦的条件下坚持学习。婚后15年随丈夫跑遍半个中国，仍<strong class="text-[#C87D59]">嗜书成癖</strong>，在旅途、车船、驴背上均不忘读书吟诗。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-heart text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">文化坚守</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">一次兵变猝起，行李首饰尽失，李因却<strong class="text-[#C87D59]">独抱诗稿而逃</strong>。丈夫赞她"花鸟我不如姬"，她的诗"清扬婉妩，如晨露初桐"，画"幽淡欲绝，得青藤、白阳遗意"。</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-[#8A9B8C]/10 rounded-lg p-4 text-center">
+<p class="text-3xl font-bold text-[#8A9B8C] font-display mb-1">260+</p>
+<p class="text-base text-[#3C3836]/70">诗作数量</p>
+</div>
+<div class="bg-[#C87D59]/10 rounded-lg p-4 text-center">
+<p class="text-3xl font-bold text-[#C87D59] font-display mb-1">《竹笑轩吟草》</p>
+<p class="text-base text-[#3C3836]/70">诗集名称</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">胡适的徽州情结：乡音未改</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex-1 rounded-2xl overflow-hidden shadow-xl">
+<img alt="胡适照片" class="w-full h-full object-cover" src="https://kimi-web-img.moonshot.cn/img/collection.sinaimg.cn/88b960968af3d6ab772ea01db392f863a25cc274.jpg"/>
+</div>
+<div class="bg-[#8A9B8C]/10 rounded-xl p-5">
+<p class="text-xl text-[#3C3836] leading-relaxed font-serif-cn italic text-center">
+<i class="fas fa-quote-left text-[#8A9B8C] mr-2"></i>
+                            少小离家晚不回，乡音无改鬓毛衰
+                            <i class="fas fa-quote-right text-[#8A9B8C] ml-2"></i>
+</p>
+<p class="text-base text-[#3C3836]/70 text-center mt-2">——胡适晚年心境的最好描述</p>
+</div>
+</div>
+<div class="flex flex-col justify-center space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-user-graduate text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">人物简介</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#8A9B8C]">胡适</strong>（1891-1962），徽州绩溪人，著名学者、诗人。14岁离开家乡去上海读书，后留学美国，但<strong class="text-[#C87D59]">一生都怀着浓浓的徽州情结</strong>。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-language text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">徽州话是第一语言</h3>
+</div>
+<div class="bg-[#C87D59]/10 rounded-lg p-4 mb-3">
+<p class="text-xl text-[#C87D59] font-bold font-serif-cn text-center">"徽州话是我的第一语言，当然还会说"</p>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">晚年胡适非常自豪地说出这句话。即使说上海话、官话，他也一直带着<strong class="text-[#B3A593]">徽州口音</strong>。他小时候用绩溪土话念的诗，长大后也只能用土话来念。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-laugh-beam text-xl"></i>
+</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">有趣的徽州土语</h3>
+</div>
+<div class="space-y-2">
+<div class="flex items-start gap-3">
+<span class="px-3 py-1 bg-[#8A9B8C] text-white rounded-full text-sm font-bold shrink-0">打手心</span>
+<p class="text-base text-[#3C3836]/80">用木尺击打手心惩罚孩子，胡适小时候被母亲责罚的记忆</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="px-3 py-1 bg-[#B3A593] text-white rounded-full text-sm font-bold shrink-0">害病</span>
+<p class="text-base text-[#3C3836]/80">徽州土语中"生病"的意思</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="px-3 py-1 bg-[#C87D59] text-white rounded-full text-sm font-bold shrink-0">洗面</span>
+<p class="text-base text-[#3C3836]/80">洗脸的意思，体现徽州方言特色</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#8A9B8C]" type="chapter">
+<img alt="徽匠雕刻" class="absolute inset-0 w-full h-full object-cover opacity-30" src="徽匠雕刻图.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#8A9B8C]/90 to-[#8A9B8C]/60"></div>
+<div class="relative h-full flex items-center z-10">
+<div class="max-w-3xl">
+<div class="inline-block px-6 py-3 bg-[#C87D59] text-[#F8F5F0] text-xl font-bold rounded-full mb-8">
+                    Chapter 03
+                </div>
+<h2 class="font-serif-cn text-7xl font-bold text-[#F8F5F0] mb-6 leading-tight">
+                    徽匠精神
+                </h2>
+<div class="w-40 h-1 bg-[#C87D59] mb-8"></div>
+<p class="text-4xl text-[#F8F5F0]/90 font-light">
+                    匠心独运的非遗传承
+                </p>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">徽匠精神是什么？</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 flex flex-col space-y-4">
+<div class="grid grid-cols-2 gap-5">
+<div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-[#8A9B8C]">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-gem text-3xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">细腻规范</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">徽匠在工作中追求<strong class="text-[#8A9B8C]">极致的精细和规范</strong>。无论是三雕的每一刀，还是徽墨的每一道工序，都严格按照传统工艺执行，不容许丝毫马虎。</p>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-[#B3A593]">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-hammer text-3xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">吃苦耐劳</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">徽匠具有<strong class="text-[#B3A593]">坚韧不拔的毅力</strong>。雕刻一件作品可能需要数月甚至数年，他们耐得住寂寞，经得起考验，用时间和汗水铸就精品。</p>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-[#C87D59]">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-users text-3xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">团结协作</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">徽匠深知<strong class="text-[#C87D59]">合作的重要性</strong>。大型建筑项目需要众多工匠协同配合，他们分工明确、默契配合，共同完成宏伟的工程。</p>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-[#8A9B8C]">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-16 h-16 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-lightbulb text-3xl"></i>
+</div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#3C3836]">独具匠心</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">徽匠具有<strong class="text-[#8A9B8C]">创新思维和独特视角</strong>。他们在传承传统技艺的基础上，不断融入新的创意，使作品既有传统韵味，又具时代特色。</p>
+</div>
+</div>
+<div class="bg-[#C87D59] rounded-xl p-6 text-white">
+<div class="flex items-center justify-center gap-4">
+<i class="fas fa-heart text-4xl"></i>
+<div>
+<p class="text-3xl font-bold font-serif-cn mb-2">"择一事，终一生"</p>
+<p class="text-xl">这是徽匠精神最核心的体现——用一生坚守一门技艺，用匠心铸就传世精品</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">现代徽匠：传承与创新</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-5">
+<div class="space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-14 h-14 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-award text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">洪建华</h3>
+<p class="text-base text-[#3C3836]/70">徽州竹雕国家级非遗传承人</p>
+</div>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">突破<strong class="text-[#8A9B8C]">12层高浮雕</strong>技术难关，填补竹木雕技艺研究空白。创办国家级技能大师工作室，带出<strong class="text-[#C87D59]">60多位</strong>传承人。2025年大阪世博会，让徽州竹雕惊艳国际舞台。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-14 h-14 rounded-full bg-[#B3A593] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-user-tie text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">朱泓</h3>
+<p class="text-base text-[#3C3836]/70">80后徽州木雕省级非遗传承人</p>
+</div>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#B3A593]">15岁</strong>学雕刻，<strong class="text-[#C87D59]">17岁</strong>开作坊，作品多次获奖。主持制定<strong class="text-[#8A9B8C]">《徽州竹雕》行业标准</strong>与《徽州四雕木雕》地方标准，让徽雕走向世界。</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-14 h-14 rounded-full bg-[#C87D59] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-medal text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">吴正辉</h3>
+<p class="text-base text-[#3C3836]/70">徽州砖雕国家级非遗传承人</p>
+</div>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">成功<strong class="text-[#C87D59]">"复活"失传已久的九层砖雕技术</strong>，追求极致。潜心钻研砖雕工艺，从青涩学徒成长为行业领军人物。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-14 h-14 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white shrink-0">
+<i class="fas fa-pen-fancy text-2xl"></i>
+</div>
+<div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">周美洪</h3>
+<p class="text-base text-[#3C3836]/70">徽墨制作技艺国家级非遗传承人</p>
+</div>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#8A9B8C]">"择一事，终一生"</strong>，近半个世纪坚守徽墨制作。他说："<strong class="text-[#C87D59]">一两徽墨一两金</strong>"的价值在于"认认真真做产品"的严谨工艺与品质追求。</p>
+</div>
+</div>
+</div>
+<div class="mt-4 bg-[#C87D59]/10 rounded-xl p-4">
+<div class="flex items-center justify-center gap-4">
+<i class="fas fa-star text-3xl text-[#C87D59]"></i>
+<p class="text-xl text-[#3C3836] font-serif-cn font-bold">他们坚守的不仅是技艺，更是一种精神，一种文化</p>
+<i class="fas fa-star text-3xl text-[#C87D59]"></i>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#B3A593]" type="chapter">
+<div class="absolute inset-0 bg-gradient-to-br from-[#B3A593]/90 to-[#8A9B8C]/80"></div>
+<div class="relative h-full flex items-center z-10">
+<div class="max-w-3xl">
+<div class="inline-block px-6 py-3 bg-[#C87D59] text-[#F8F5F0] text-xl font-bold rounded-full mb-8">
+                    Chapter 04
+                </div>
+<h2 class="font-serif-cn text-7xl font-bold text-[#F8F5F0] mb-6 leading-tight">
+                    文化感悟
+                </h2>
+<div class="w-40 h-1 bg-[#C87D59] mb-8"></div>
+<p class="text-4xl text-[#F8F5F0]/90 font-light">
+                    徽韵匠心的时代价值
+                </p>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">我对"徽韵匠心"的理解</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 bg-white rounded-2xl p-8 shadow-xl">
+<div class="prose prose-lg max-w-none">
+<div class="mb-6">
+<h3 class="font-serif-cn text-2xl font-bold text-[#8A9B8C] mb-4 flex items-center gap-3">
+<i class="fas fa-question-circle"></i>
+                            什么是匠心？
+                        </h3>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed pl-10">通过学习徽州文化，我明白了<strong class="text-[#8A9B8C]">匠心</strong>就是像洪建华、吴正辉那样，用一生去做好一件事。不管是雕刻一块木头，还是制作一锭徽墨，都要追求极致，做到最好。就像李因"积苔为纸，扫柿为书"那样，即使在艰苦的环境中，也要坚持学习和创作。</p>
+</div>
+<div class="mb-6">
+<h3 class="font-serif-cn text-2xl font-bold text-[#B3A593] mb-4 flex items-center gap-3">
+<i class="fas fa-heart"></i>
+                            为什么要传承匠心？
+                        </h3>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed pl-10"><strong class="text-[#B3A593]">匠心精神是徽州文化的灵魂</strong>。从马头墙到徽州三雕，从徽墨到徽菜，每一项技艺都凝聚着先辈们的智慧和汗水。如果我们不传承，这些宝贵的文化遗产就会消失。就像周美洪爷爷说的："做这行不缺技术人才，缺的是静下心来做事的人。"</p>
+</div>
+<div>
+<h3 class="font-serif-cn text-2xl font-bold text-[#C87D59] mb-4 flex items-center gap-3">
+<i class="fas fa-lightbulb"></i>
+                            如何践行匠心？
+                        </h3>
+<p class="text-lg text-[#3C3836]/80 leading-relaxed pl-10">作为小学生，我要在学习中践行匠心精神。<strong class="text-[#C87D59]">上课认真听讲，作业认真完成，遇到困难不轻易放弃</strong>。就像徽匠雕刻一样，一刀一刀慢慢来，终有一天能完成精美的作品。我还要多了解徽州文化，向身边的人介绍家乡的文化瑰宝，做徽州文化的小小传播者！</p>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-center gap-4">
+<div class="w-20 h-1 bg-[#8A9B8C]"></div>
+<p class="text-xl text-[#3C3836] font-serif-cn italic">传承徽州文化，弘扬徽匠精神，从我做起！</p>
+<div class="w-20 h-1 bg-[#C87D59]"></div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#8A9B8C]" type="chapter">
+<div class="absolute inset-0 bg-gradient-to-br from-[#8A9B8C]/90 to-[#B3A593]/80"></div>
+<div class="relative h-full flex items-center z-10">
+<div class="max-w-3xl">
+<div class="inline-block px-6 py-3 bg-[#C87D59] text-[#F8F5F0] text-xl font-bold rounded-full mb-8">
+                    Chapter 05
+                </div>
+<h2 class="font-serif-cn text-7xl font-bold text-[#F8F5F0] mb-6 leading-tight">
+                    我为家乡做代言
+                </h2>
+<div class="w-40 h-1 bg-[#C87D59] mb-8"></div>
+<p class="text-4xl text-[#F8F5F0]/90 font-light">
+                    解说词框架
+                </p>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#F8F5F0]" type="content">
+<div class="h-full flex flex-col">
+<div class="mb-4">
+<h2 class="font-serif-cn text-5xl font-bold text-[#3C3836] mb-3">"我为家乡做代言"解说词</h2>
+<div class="w-24 h-1 bg-[#C87D59]"></div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-5">
+<div class="space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#8A9B8C]">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white font-bold shrink-0">1</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">开场白</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">大家好！我是来自延乔路小学的学生。今天，我要向大家介绍我的家乡——<strong class="text-[#8A9B8C]">徽州</strong>，一个有着900多年历史、被誉为"东南邹鲁"的文化名城。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#B3A593]">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#B3A593] flex items-center justify-center text-white font-bold shrink-0">2</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">徽州概况</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">徽州位于安徽省南部，这里<strong class="text-[#B3A593]">山清水秀，人杰地灵</strong>。2000年，西递、宏村被列入世界文化遗产名录。徽州文化包括徽派建筑、徽州三雕、徽菜、徽墨等众多瑰宝。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#C87D59]">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#C87D59] flex items-center justify-center text-white font-bold shrink-0">3</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">文化亮点</h3>
+</div>
+<div class="space-y-2">
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#8A9B8C]">徽派建筑：</strong>马头墙高低错落，像万马奔腾；白墙黛瓦，如诗如画。</p>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#B3A593]">徽州三雕：</strong>木雕、砖雕、石雕，无宅不雕花，2006年列入国家级非遗。</p>
+<p class="text-base text-[#3C3836]/80 leading-relaxed"><strong class="text-[#C87D59]">历史名人：</strong>方腊起义威震东南，才女李因诗画双绝，胡适乡音未改。</p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#8A9B8C]">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#8A9B8C] flex items-center justify-center text-white font-bold shrink-0">4</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">徽匠精神</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">徽匠精神是<strong class="text-[#8A9B8C]">细腻规范、吃苦耐劳、团结协作、独具匠心</strong>。洪建华突破12层高浮雕技术，周美洪近半个世纪坚守徽墨制作，他们用一生诠释了"择一事，终一生"的坚守。</p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#B3A593]">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#B3A593] flex items-center justify-center text-white font-bold shrink-0">5</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">个人感悟</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">作为徽州人的后代，我深感自豪。我要学习徽匠精神，在学习中追求卓越，在生活中传承文化。<strong class="text-[#B3A593]">传承徽州文化，弘扬徽匠精神，从我做起！</strong></p>
+</div>
+<div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-[#C87D59]">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-[#C87D59] flex items-center justify-center text-white font-bold shrink-0">6</div>
+<h3 class="font-serif-cn text-xl font-bold text-[#3C3836]">结束语</h3>
+</div>
+<p class="text-base text-[#3C3836]/80 leading-relaxed">亲爱的朋友们，<strong class="text-[#C87D59]">徽州欢迎您！</strong>欢迎您来欣赏马头墙的壮美，感受徽州三雕的精妙，品味徽菜的独特，体验徽文化的魅力。相信您一定会爱上这片古老而美丽的土地！</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="ppt-slide !bg-[#8A9B8C]" type="final">
+<img alt="徽州古村落" class="absolute inset-0 w-full h-full object-cover opacity-30" src="https://kimi-web-img.moonshot.cn/img/photocdn.sohu.com/f2cbabcd5f4d0ff89cd730872546c71573b84dab.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-br from-[#8A9B8C]/85 via-[#B3A593]/75 to-[#C87D59]/70"></div>
+<div class="relative h-full flex flex-col justify-center items-center z-10 text-center">
+<div class="mb-8">
+<i class="fas fa-heart text-7xl text-[#C87D59]"></i>
+</div>
+<h2 class="font-serif-cn text-6xl font-bold text-[#F8F5F0] mb-8 leading-tight">
+                传承徽州文化<br/>争做时代新人
+            </h2>
+<div class="w-40 h-1 bg-[#C87D59] mb-8"></div>
+<p class="text-3xl text-[#F8F5F0] font-light mb-12 max-w-4xl leading-relaxed">
+                让我们携手传承徽州文化，弘扬徽匠精神<br/>
+                做家乡文化的小小传播者！
+            </p>
+<div class="flex items-center gap-8">
+<div class="bg-white/20 backdrop-blur-sm rounded-2xl px-8 py-4">
+<p class="text-2xl text-[#F8F5F0] font-serif-cn font-bold">延乔路小学</p>
+</div>
+<div class="bg-white/20 backdrop-blur-sm rounded-2xl px-8 py-4">
+<p class="text-2xl text-[#F8F5F0] font-serif-cn font-bold">寒假主题学习实践</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
